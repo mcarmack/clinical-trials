@@ -38,4 +38,4 @@ Having trouble with Pages? Check out our [documentation](https://help.github.com
 
 ### First link
 Link is now updated.
-[lines.html](https://github.com/mcarmack/clinical-trials/lines.html)
+[lines.html](/clinical-trials/lines.html)
