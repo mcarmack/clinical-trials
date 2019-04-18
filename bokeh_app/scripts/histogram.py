@@ -30,7 +30,7 @@ def histogram_tab(trials):
 
 		range_extent = range_end - range_start
 
-		print(phase_list)
+		# print(phase_list)
 		# Iterate through all the carriers
 		for i, phase_name in enumerate(phase_list):
 
@@ -41,8 +41,8 @@ def histogram_tab(trials):
 			enrollment_hist, edges = np.histogram(subset['Enrollment'],
 										   bins = int(range_extent / bin_width),
 										   range = [range_start, range_end])
-			print(enrollment_hist)
-			print(edges)
+			# print(enrollment_hist)
+			# print(edges)
 
 			# Divide the counts by the total to get a proportion
 			enrollment_df = pd.DataFrame({'proportion': enrollment_hist / np.sum(enrollment_hist), 'left': edges[:-1], 'right': edges[1:] })
@@ -108,8 +108,6 @@ def histogram_tab(trials):
 		p = style(p)
 
 		return p
-
-
 
 	def update(attr, old, new):
 		phases_to_plot = [phase_selection.labels[i] for i in phase_selection.active]
