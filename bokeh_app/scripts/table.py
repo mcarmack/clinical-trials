@@ -9,7 +9,7 @@ def table_tab(trials):
 
 	# Calculate summary stats for table
 	phase_stats = trials.groupby('Phases')['Enrollment'].describe()
-	print(phase_stats)
+	# print(phase_stats)
 	phase_stats = phase_stats.reset_index().rename(
 		columns={'name': 'Phases', 'count': 'trials', '50%':'median'})
 
